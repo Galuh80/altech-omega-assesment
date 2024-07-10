@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authors',
     'books',
+    'drf_yasg',
     'debug_toolbar',
     'rest_framework',
     'rest_framework_swagger',
@@ -117,6 +118,15 @@ CACHES = {
         'LOCATION': 'redis://localhost:6379/1',
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
+    }
+}
+
+# Swagger
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
         }
     }
 }
