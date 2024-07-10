@@ -1,35 +1,36 @@
 from rest_framework import serializers
-from .models import Author
+from .models import Book
 from .validators import *
 
-class AuthorSerializer(serializers.ModelSerializer):
+class BookSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Author
+        model = Book
         fields = '__all__'
     
-    name = serializers.CharField(
+    title = serializers.CharField(
         required=True, 
         allow_blank=False, 
-        validators=[validate_name],
+        validators=[validate_title],
         error_messages={
             'blank': 'This field may not be blank.',
             'null': 'This field may not be null.',
         }
     )
-    birth_date = serializers.DateField(
+    
+    description = serializers.CharField(
+        required=True, 
+        allow_blank=False, 
+        validators=[validate_description],
+        error_messages={
+            'blank': 'This field may not be blank.',
+            'null': 'This field may not be null.',
+        }
+    )
+    
+    publish_date = serializers.DateField(
         required=True, 
         error_messages={
             'invalid': 'Enter a valid date.',
-            'null': 'This field may not be null.',
-        }
-    )
-    
-    bio = serializers.CharField(
-        required=True, 
-        allow_blank=False, 
-        validators=[validate_bio],
-        error_messages={
-            'blank': 'This field may not be blank.',
             'null': 'This field may not be null.',
         }
     )
