@@ -11,4 +11,4 @@ class Author(models.Model):
         db_table = 'authors'
                 
     def __str__(self):
-        return self.email
+        return self.name
