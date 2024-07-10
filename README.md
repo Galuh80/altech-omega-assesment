@@ -33,58 +33,57 @@ The library application created with some technologies, such as:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Before running the library management application, make sure you have installed some of the tools below, because I use the Linux operating system, I will give an example using Linux.
+* Python 3.10
   ```sh
-  npm install npm@latest -g
+  sudo apt install python3
+  ```
+* Redis
+  ```sh
+  sudo apt install redis
   ```
 
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+2. Move to directory
    ```sh
-   npm install
+   cd 
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install Virtual Environment
+   ```sh
+   python3 -m venv env
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+4. Activate the environmnet
+   ```sh
+   source env/bin/activate
+   ```
+6. Install requirements
+   ```sh
+   pip install -r requirments.txt
+   ```
+7. 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- ROADMAP -->
-## Roadmap
+## To Do List
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Authors Module
+- [x] Books Module
+- [x] Restfull API
+- [x] Caching
+- [x] Testing
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
