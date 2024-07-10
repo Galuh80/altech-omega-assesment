@@ -115,8 +115,9 @@ Before running the library management application, make sure you have installed 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
-
+[author-test-screenshot]: images/test-authors.png
+[book-test-screenshot]: images/test-books.png
+[swagger-screenshot]: images/swagger.png
 [Django]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green
 [Django-url]: https://www.djangoproject.com/
 [DRF]: https://img.shields.io/badge/django--rest--framework-3.12.4-blue?style=for-the-badge&labelColor=333333&logo=django&logoColor=white&color=blue
