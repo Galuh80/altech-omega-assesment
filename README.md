@@ -1,4 +1,4 @@
-![image](https://github.com/Galuh80/altech-omega-assesment/assets/33372417/73982ce9-1035-4fd6-8d4f-31fdf44dfe55)<!-- ABOUT THE PROJECT -->
+<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 The library application serves as a digital repository for managing books authored by various writers. It provides functionalities for users to browse, search, and interact with books and authors.
@@ -95,14 +95,20 @@ Before running the library management application, make sure you have installed 
    ```sh
    python3 manage.py test author
    ```
+   [![Author Test][author-test-screenshot]
+      
 2. Book Test
    ```sh
    python3 manage.py test book
    ```
+   [![Book Test][book-test-screenshot]
+   
 3. Swagger UI
    ```sh
    http://127.0.0.1:8000/swagger/
    ```
+   ![image](https://github.com/Galuh80/altech-omega-assesment/assets/33372417/73982ce9-1035-4fd6-8d4f-31fdf44dfe55)
+
 
 <!-- ROADMAP -->
 ## To Do List
