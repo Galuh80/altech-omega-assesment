@@ -1,4 +1,4 @@
-<!-- ABOUT THE PROJECT -->
+![image](https://github.com/Galuh80/altech-omega-assesment/assets/33372417/73982ce9-1035-4fd6-8d4f-31fdf44dfe55)<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 The library application serves as a digital repository for managing books authored by various writers. It provides functionalities for users to browse, search, and interact with books and authors.
@@ -47,17 +47,15 @@ Before running the library management application, make sure you have installed 
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Galuh80/altech-omega-assesment.git
    ```
 2. Move to directory
    ```sh
-   cd 
+   cd altech-omega-assesment
    ```
-3. Install Virtual Environment
+3. Install virtual environment
    ```sh
    python3 -m venv env
    ```
@@ -69,12 +67,42 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    pip install -r requirments.txt
    ```
-7. 
+7. Copy .env.example to .env and configure it
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Database migrate
+   ```sh
+   python3 manage.py migrate
+   ```
+2. Author seeding
+   ```sh
+   python3 manage.py author_seed_data
+   ```
+3. Book seeding
+   ```sh
+   python3 manage.py book_seed_data
+   ```
+4. Run application
+   ```sh
+   python3 manage.py runserver
+   ```
+
+## Testing
+
+1. Author Test
+   ```sh
+   python3 manage.py test author
+   ```
+2. Book Test
+   ```sh
+   python3 manage.py test book
+   ```
+3. Swagger UI
+   ```sh
+   http://127.0.0.1:8000/swagger/
+   ```
 
 <!-- ROADMAP -->
 ## To Do List
