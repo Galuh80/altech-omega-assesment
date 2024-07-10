@@ -13,6 +13,7 @@ class BookListCreateView(GenericAPIView):
     pagination_class = PaginationPage
 
     def get(self, request, *args, **kwargs):
+        # Cache books 
         books = cache.get('books_list')
         if not books:
             books = list(self.get_queryset())
@@ -39,6 +40,7 @@ class BookDetailUpdateDeleteView(GenericAPIView):
 
     def get(self, request, *args, **kwargs):
         book_id = self.kwargs.get(self.lookup_url_kwarg)
+        # Cache book
         cache_key = f'book_{book_id}'
         book = cache.get(cache_key)
         if not book:
