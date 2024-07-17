@@ -24,7 +24,7 @@ class AuthorListCreateView(GenericAPIView):
         if page is not None:
             serializer = self.get_serializer(page, many=True)
             return self.get_paginated_response(serializer.data)
-        
+
         serializer = self.get_serializer(authors, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
